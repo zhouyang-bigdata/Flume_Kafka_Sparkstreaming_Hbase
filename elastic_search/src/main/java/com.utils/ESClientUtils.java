@@ -37,7 +37,13 @@ import com.alibaba.fastjson.JSONArray;
 import com.alibaba.fastjson.JSONObject;
 import com.amas.util.Logger;
 
-
+/*
+ * @Author zhouyang
+ * @Description TODO 
+ * @Date 10:01 2019/3/5
+ * @Param 
+ * @return 
+ **/
 public class ESClientUtils {
 	protected static Logger logger = Logger.getLogger(ESClientUtils.class);
     protected static TransportClient client;

@@ -42,7 +42,13 @@ import com.amas.util.Logger;
 import org.elasticsearch.action.search.SearchRequestBuilder;
 
 
-
+/*
+ * @Author zhouyang
+ * @Description TODO 
+ * @Date 10:01 2019/3/5
+ * @Param 
+ * @return 
+ **/
 public class ESClientUtils2 {
 	protected static Logger logger = Logger.getLogger(ESClientUtils2.class);
     protected static TransportClient client;
