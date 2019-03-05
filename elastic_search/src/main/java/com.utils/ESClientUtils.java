@@ -1,4 +1,4 @@
-package com.amas.utils.common;
+package com.utils;
 
 import java.net.InetAddress;
 import java.util.HashMap;

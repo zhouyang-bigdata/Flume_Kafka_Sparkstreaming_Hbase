@@ -11,5 +11,7 @@
 
     <artifactId>elastic_search</artifactId>
 
+    <dependencies>
 
+    </dependencies>
 </project>
