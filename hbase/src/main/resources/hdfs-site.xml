@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+<!--
+  Licensed under the Apache License, Version 2.0 (the "License");
+  you may not use this file except in compliance with the License.
+  You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+  Unless required by applicable law or agreed to in writing, software
+  distributed under the License is distributed on an "AS IS" BASIS,
+  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  See the License for the specific language governing permissions and
+  limitations under the License. See accompanying LICENSE file.
+-->
+
+<!-- Put site-specific property overrides in this file. -->
+
+<configuration>
+                <property>
+                        <!-- 数据备份数3 -->
+               		<name>dfs.replication</name>
+                        <value>1</value>
+                </property>
+                <property>
+                    	<!-- nameNode 节点的本地元数据备份目录-->
+                	<name>dfs.name.dir</name>
+                        <value>file:/home/taima/software-package/hadoop-2.6.4/dfs/dfs/name</value>
+                </property>
+                <property>
+                        <name>dfs.data.dir</name>
+                        <value>file:/home/taima/software-package/hadoop-2.6.4/dfs/dfs/data</value>
+                </property>
+		<property>
+		        <!-- nameNode 默认256-->
+                        <name>dfs.datanode.max.xcievers</name>
+                        <value>4096</value>
+               </property>
+               <property>
+               		<!-- 默认10-->
+               		<name>dfs.namenode.handler.count</name>
+               		<value>30</value>	
+	       </property>
+	       <property>
+	               <name>dfs.client.block.write.replace-datanode-on-failure.enable</name>        
+	       	       <value>true</value>
+	       </property>
+	       <property>
+	           <name>dfs.client.block.write.replace-datanode-on-failure.policy</name>
+	           <value>NEVER</value>
+	       </property>
+	       <property>
+	                               <!-- 默认10-->
+                        <name>dfs.datanode.handler.count</name>
+                        <value>30</value>       
+               </property>
+</configuration>
