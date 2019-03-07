@@ -22,7 +22,9 @@
         <hadoop.version>2.6.4</hadoop.version>
         <scala.detail.version>2.10.7</scala.detail.version>
         <hive.version>1.1</hive.version>
+        <!--<hbase.version>0.98.8-hadoop2</hbase.version>-->
         <hbase.version>1.2.6</hbase.version>
+        <elastic-search.version>5.2.1</elastic-search.version>
     </properties>
 
     <repositories>
@@ -160,11 +162,11 @@
 
 
         <!-- https://mvnrepository.com/artifact/org.scala-tools/maven-scala-plugin -->
-        <dependency>
-            <groupId>org.scala-tools</groupId>
-            <artifactId>maven-scala-plugin</artifactId>
-            <version>2.15.2</version>
-        </dependency>
+        <!--<dependency>-->
+            <!--<groupId>org.scala-tools</groupId>-->
+            <!--<artifactId>maven-scala-plugin</artifactId>-->
+            <!--<version>2.15.2</version>-->
+        <!--</dependency>-->
 
         <!-- java 读取csv包-->
         <!-- https://mvnrepository.com/artifact/net.sourceforge.javacsv/javacsv -->
@@ -172,6 +174,47 @@
             <groupId>net.sourceforge.javacsv</groupId>
             <artifactId>javacsv</artifactId>
             <version>2.0</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>2.6.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.6.2</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.slf4j</groupId>
+            <artifactId>slf4j-api</artifactId>
+            <version>1.7.25</version>
+        </dependency>
+
+        <!--<dependency>-->
+            <!--<groupId>org.slf4j</groupId>-->
+            <!--<artifactId>slf4j-log4j12</artifactId>-->
+            <!--<version>1.5.3</version>-->
+        <!--</dependency>-->
+
+        <!--<dependency>-->
+            <!--<groupId>org.slf4j</groupId>-->
+            <!--<artifactId>jcl-over-slf4j</artifactId>-->
+            <!--<version>1.7.25</version>-->
+        <!--</dependency>-->
+        <!--<dependency>-->
+            <!--<groupId>org.slf4j</groupId>-->
+            <!--<artifactId>log4j-over-slf4j</artifactId>-->
+            <!--<version>1.7.25</version>-->
+        <!--</dependency>-->
+
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-core</artifactId>
+            <version>4.0.4.RELEASE</version>
         </dependency>
     </dependencies>
 
@@ -197,4 +240,7 @@
 
         </plugins>
     </reporting>
+
+
+
 </project>
