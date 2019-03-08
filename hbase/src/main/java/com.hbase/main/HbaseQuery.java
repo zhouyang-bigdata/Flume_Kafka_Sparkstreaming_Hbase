@@ -2,21 +2,21 @@ package com.hbase.main;
 
 import com.alibaba.fastjson.JSONArray;
 import com.hbase.hbaseUtils.HBaseQueryUtils2;
-import com.hbase.hbaseUtils.HBaseQueryUtils3;
 
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+
 /**
- * @ClassName HbaseOperate
+ * @ClassName HbaseQuery
  * @Description TODO
  * @Author zhouyang
  * @Date 2019/3/6 11:14
  * @Version 1.0
  **/
-public class HbaseOperate {
+public class HbaseQuery {
     public static void main(String[] args){
         List<Map<String, Object>> dataList = new ArrayList<Map<String, Object>>();
         Map<String, Object> map1 = new HashMap<>();
@@ -41,4 +41,7 @@ public class HbaseOperate {
         }
         System.out.println(jsonArray.toJSONString());
     }
+
+
+
 }
