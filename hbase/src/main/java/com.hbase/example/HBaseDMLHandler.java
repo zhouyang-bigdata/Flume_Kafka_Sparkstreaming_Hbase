@@ -204,7 +204,7 @@ public class HBaseDMLHandler extends HBaseBaseHandler {
 	public static void main(String[] args) throws Exception {
 		String quorum = "192.168.134.10";
 		//quorum = "192.168.8.191,192.168.1.192,192.168.1.193";
-		int port = 2182;
+		int port = 2181;
 		String znode = "/hbase";
 		HBaseConnPool connPool = new HBaseClientManager(quorum, port, znode);
 		HBaseDMLHandler handler = new HBaseDMLHandler(connPool);
@@ -220,7 +220,7 @@ public class HBaseDMLHandler extends HBaseBaseHandler {
 //		handler.putList(tableName, new String[]{"key010", "key011"}, "cf", "name", new String[]{"Michael010", "Michael011"});
 
 		HBaseUtils.printResultInfo(handler.get(tableName, "S0_002904_1045_1"));
-		HBaseUtils.printResultInfo(handler.get(tableName, "S0_002904_1045_1", "f1"));
+		//HBaseUtils.printResultInfo(handler.get(tableName, "S0_002904_1045_1", "f1"));
 		//HBaseUtils.printResultInfo(handler.get(tableName, "S0_002904_1045_1", "f1", ""));
 
 		connPool.closeConn();

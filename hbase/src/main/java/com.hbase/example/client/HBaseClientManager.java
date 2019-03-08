@@ -41,6 +41,7 @@ public class HBaseClientManager implements HBaseConnPool {
 		conf.set("hbase.zookeeper.property.clientPort", port + "");
 		conf.set("hbase.zookeeper.quorum", quorum);
 		conf.set("zookeeper.znode.parent", znode);
+		conf.set("hbase.master", "192.168.134.10:16000");
 		this.config = conf;
 	}
 
