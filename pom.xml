@@ -22,7 +22,6 @@
         <hadoop.version>2.6.4</hadoop.version>
         <scala.detail.version>2.10.7</scala.detail.version>
         <hive.version>1.1</hive.version>
-        <!--<hbase.version>0.98.8-hadoop2</hbase.version>-->
         <hbase.version>1.2.6</hbase.version>
         <elastic-search.version>5.2.1</elastic-search.version>
     </properties>
@@ -51,53 +50,6 @@
             <version>${scala.detail.version}</version>
         </dependency>
 
-        <!--<dependency>-->
-        <!--<groupId>org.apache.spark</groupId>-->
-        <!--<artifactId>spark-core_${scala.version}</artifactId>-->
-        <!--<version>${spark.version}</version>-->
-        <!--</dependency>-->
-
-        <!--<dependency>-->
-        <!--<groupId>org.apache.spark</groupId>-->
-        <!--<artifactId>spark-sql_${scala.version}</artifactId>-->
-        <!--<version>${spark.version}</version>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-        <!--<groupId>org.apache.spark</groupId>-->
-        <!--<artifactId>spark-hive_${scala.version}</artifactId>-->
-        <!--<version>${spark.version}</version>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-        <!--<groupId>org.apache.spark</groupId>-->
-        <!--<artifactId>spark-streaming_${scala.version}</artifactId>-->
-        <!--<version>${spark.version}</version>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-        <!--<groupId>org.apache.hadoop</groupId>-->
-        <!--<artifactId>hadoop-client</artifactId>-->
-        <!--<version>${hadoop.version}</version>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-        <!--<groupId>org.apache.spark</groupId>-->
-        <!--<artifactId>spark-streaming-kafka-0-10_2.11</artifactId>-->
-        <!--<version>2.1.0</version>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-        <!--<groupId>org.apache.spark</groupId>-->
-        <!--<artifactId>spark-mllib_${scala.version}</artifactId>-->
-        <!--<version>${spark.version}</version>-->
-        <!--</dependency>-->
-
-        <!--<dependency>-->
-        <!--<groupId>org.apache.hbase</groupId>-->
-        <!--<artifactId>hbase-client</artifactId>-->
-        <!--<version>${hbase.version}</version>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-        <!--<groupId>org.apache.hbase</groupId>-->
-        <!--<artifactId>hbase-server</artifactId>-->
-        <!--<version>${hbase.version}</version>-->
-        <!--</dependency>-->
 
         <!-- https://mvnrepository.com/artifact/org.spark-project.protobuf/protobuf-java -->
         <dependency>
@@ -160,22 +112,6 @@
             <version>3.2.1</version>
         </dependency>
 
-
-        <!-- https://mvnrepository.com/artifact/org.scala-tools/maven-scala-plugin -->
-        <!--<dependency>-->
-            <!--<groupId>org.scala-tools</groupId>-->
-            <!--<artifactId>maven-scala-plugin</artifactId>-->
-            <!--<version>2.15.2</version>-->
-        <!--</dependency>-->
-
-        <!-- java 读取csv包-->
-        <!-- https://mvnrepository.com/artifact/net.sourceforge.javacsv/javacsv -->
-        <dependency>
-            <groupId>net.sourceforge.javacsv</groupId>
-            <artifactId>javacsv</artifactId>
-            <version>2.0</version>
-        </dependency>
-
         <dependency>
             <groupId>org.apache.logging.log4j</groupId>
             <artifactId>log4j-api</artifactId>
@@ -193,23 +129,6 @@
             <artifactId>slf4j-api</artifactId>
             <version>1.7.25</version>
         </dependency>
-
-        <!--<dependency>-->
-            <!--<groupId>org.slf4j</groupId>-->
-            <!--<artifactId>slf4j-log4j12</artifactId>-->
-            <!--<version>1.5.3</version>-->
-        <!--</dependency>-->
-
-        <!--<dependency>-->
-            <!--<groupId>org.slf4j</groupId>-->
-            <!--<artifactId>jcl-over-slf4j</artifactId>-->
-            <!--<version>1.7.25</version>-->
-        <!--</dependency>-->
-        <!--<dependency>-->
-            <!--<groupId>org.slf4j</groupId>-->
-            <!--<artifactId>log4j-over-slf4j</artifactId>-->
-            <!--<version>1.7.25</version>-->
-        <!--</dependency>-->
 
         <dependency>
             <groupId>org.springframework</groupId>
